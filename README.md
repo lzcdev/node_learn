@@ -8,6 +8,19 @@
 7. [lesson7 浏览器端测试：mocha，chai，phantomjs](./node_example/lesson7)
 
 ## socket-chat-example
-一个简单的聊天 demo，来自 [socket.io官网](https://socket.io/get-started/chat/)
+一个简单的聊天 [demo](./socket-chat-example)，来自 [socket.io官网](https://socket.io/get-started/chat/)
+
+使用方法：
+```
+cd socket-chat-example
+```
+```
+npm install
+```
+```
+node index.js
+```
+
+打开浏览器2个窗口中都输入`http://localhost:3000/`，done!
 
 
