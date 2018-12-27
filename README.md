@@ -7,6 +7,7 @@
 6. [lesson6 测试用例：mocha，should，istanbul](./node_example/lesson6)
 7. [lesson7 浏览器端测试：mocha，chai，phantomjs](./node_example/lesson7)
 
-
+## socket-chat-example
+一个简单的聊天 demo，来自 [socket.io官网](https://socket.io/get-started/chat/)
 
 
