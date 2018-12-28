@@ -24,3 +24,5 @@ node index.js
 打开浏览器2个窗口中都输入`http://localhost:3000/`，done!
 
 
+## node_begin
+[从零开始nodejs系列文章](http://blog.fens.me/series-nodejs/)
