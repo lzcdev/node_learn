@@ -7,12 +7,14 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog'); 
+var compression = require('compression');
+var helmet = require('helmet');
 
 var app = express();
 
 // Import the mongoose mudule
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://lzc:lzc2database.6Q@ds145304.mlab.com:45304/local_library';
+var mongoDB = process.env.MONGODB_URI || 'mongodb://lzc:lzc2database.6Q@ds145304.mlab.com:45304/local_library';
 mongoose.connect(mongoDB);
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
@@ -21,6 +23,9 @@ var db = mongoose.connection;
 
 // Bind connection to error event (to get nofication of connection errors)
 db.on('error', console.error.bind(console, 'MongoDB connection error: '));
+
+app.use(compression());
+app.use(helmet());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
