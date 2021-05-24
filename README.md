@@ -1,4 +1,5 @@
 ## Node.js 包教不包会
+
 1. [lesson1 一个最简单的express应用](./node_example/lesson1)
 2. [lesson2 学习使用外部模块](./node_example/lesson2)
 3. [lesson3 使用 superagent 与 cheerio 完成简单爬虫](./node_example/lesson3)
@@ -30,3 +31,8 @@ node index.js
 ## express-locallibrary-tutorial
 [本地图书馆网站
 ](https://developer.mozilla.org/zh-CN/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website)
+
+## Node_develop_actual
+
+[Node.js开发实战](https://time.geekbang.org/course/intro/100036001)
+
